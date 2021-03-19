@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE1DD4BC25C23BFB00856EB2 /* MVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DD4BB25C23BFB00856EB2 /* MVC1.swift */; };
+		FE2E29DF2605251C002D7FA1 /* dexBG.png in Resources */ = {isa = PBXBuildFile; fileRef = FE2E29DE2605251C002D7FA1 /* dexBG.png */; };
+		FE2E29EF26055700002D7FA1 /* waterbg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE2E29EE26055700002D7FA1 /* waterbg2.jpg */; };
+		FE2E29F426055A0A002D7FA1 /* firebg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE2E29F326055A0A002D7FA1 /* firebg2.jpg */; };
+		FE2E2A0426055D31002D7FA1 /* mainBG.png in Resources */ = {isa = PBXBuildFile; fileRef = FE2E2A0326055D31002D7FA1 /* mainBG.png */; };
+		FE30E6A325B875850045D42F /* MVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE30E6A225B875850045D42F /* MVC2.swift */; };
+		FE47A7C625E5A83C00380610 /* laprasmoving.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE47A7C525E5A83C00380610 /* laprasmoving.gif */; };
+		FE47A7CB25E5A88800380610 /* totodilemoving.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE47A7CA25E5A88800380610 /* totodilemoving.gif */; };
+		FE47A7D225E5AD0C00380610 /* blazikenmoving.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE47A7CF25E5AD0C00380610 /* blazikenmoving.gif */; };
+		FE47A7D325E5AD0C00380610 /* enteimoving.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE47A7D025E5AD0C00380610 /* enteimoving.gif */; };
+		FE47A7D425E5AD0C00380610 /* charizardmoving.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE47A7D125E5AD0C00380610 /* charizardmoving.gif */; };
+		FE75717E25DF17C200393CE3 /* Swift+gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE75717D25DF17C200393CE3 /* Swift+gif.swift */; };
+		FE75718625DF198300393CE3 /* blastoisemoving.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE75718525DF198300393CE3 /* blastoisemoving.gif */; };
 		FEB7B55425B75192000CACD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB7B55325B75192000CACD4 /* AppDelegate.swift */; };
 		FEB7B55625B75192000CACD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB7B55525B75192000CACD4 /* SceneDelegate.swift */; };
-		FEB7B55825B75192000CACD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB7B55725B75192000CACD4 /* ViewController.swift */; };
 		FEB7B55B25B75192000CACD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB7B55925B75192000CACD4 /* Main.storyboard */; };
 		FEB7B55D25B75192000CACD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB7B55C25B75192000CACD4 /* Assets.xcassets */; };
 		FEB7B56025B75192000CACD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB7B55E25B75192000CACD4 /* LaunchScreen.storyboard */; };
 		FEB7B56B25B75192000CACD4 /* myPokemonAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB7B56A25B75192000CACD4 /* myPokemonAppTests.swift */; };
 		FEB7B57625B75192000CACD4 /* myPokemonAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB7B57525B75192000CACD4 /* myPokemonAppUITests.swift */; };
+		FEB7B59825B758B4000CACD4 /* MyPokemonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB7B59725B758B4000CACD4 /* MyPokemonClass.swift */; };
+		FEF6365925CB7AD30004BB9D /* MVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF6365825CB7AD30004BB9D /* MVC3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +49,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE1DD4BB25C23BFB00856EB2 /* MVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVC1.swift; sourceTree = "<group>"; };
+		FE2E29DE2605251C002D7FA1 /* dexBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dexBG.png; path = ../../dexBG.png; sourceTree = "<group>"; };
+		FE2E29EE26055700002D7FA1 /* waterbg2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = waterbg2.jpg; path = ../../waterbg2.jpg; sourceTree = "<group>"; };
+		FE2E29F326055A0A002D7FA1 /* firebg2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = firebg2.jpg; path = ../../firebg2.jpg; sourceTree = "<group>"; };
+		FE2E2A0326055D31002D7FA1 /* mainBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainBG.png; path = ../../mainBG.png; sourceTree = "<group>"; };
+		FE30E6A225B875850045D42F /* MVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVC2.swift; sourceTree = "<group>"; };
+		FE47A7C525E5A83C00380610 /* laprasmoving.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = laprasmoving.gif; path = ../../laprasmoving.gif; sourceTree = "<group>"; };
+		FE47A7CA25E5A88800380610 /* totodilemoving.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = totodilemoving.gif; path = ../../totodilemoving.gif; sourceTree = "<group>"; };
+		FE47A7CF25E5AD0C00380610 /* blazikenmoving.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = blazikenmoving.gif; path = ../../blazikenmoving.gif; sourceTree = "<group>"; };
+		FE47A7D025E5AD0C00380610 /* enteimoving.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = enteimoving.gif; path = ../../enteimoving.gif; sourceTree = "<group>"; };
+		FE47A7D125E5AD0C00380610 /* charizardmoving.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = charizardmoving.gif; path = ../../charizardmoving.gif; sourceTree = "<group>"; };
+		FE75717D25DF17C200393CE3 /* Swift+gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+gif.swift"; sourceTree = "<group>"; };
+		FE75718525DF198300393CE3 /* blastoisemoving.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = blastoisemoving.gif; path = ../../blastoisemoving.gif; sourceTree = "<group>"; };
 		FEB7B55025B75192000CACD4 /* myPokemonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPokemonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB7B55325B75192000CACD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEB7B55525B75192000CACD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FEB7B55725B75192000CACD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FEB7B55A25B75192000CACD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEB7B55C25B75192000CACD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEB7B55F25B75192000CACD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +75,8 @@
 		FEB7B57125B75192000CACD4 /* myPokemonAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myPokemonAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB7B57525B75192000CACD4 /* myPokemonAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPokemonAppUITests.swift; sourceTree = "<group>"; };
 		FEB7B57725B75192000CACD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEB7B59725B758B4000CACD4 /* MyPokemonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPokemonClass.swift; sourceTree = "<group>"; };
+		FEF6365825CB7AD30004BB9D /* MVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVC3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +107,7 @@
 		FEB7B54725B75192000CACD4 = {
 			isa = PBXGroup;
 			children = (
+				FEB7B59725B758B4000CACD4 /* MyPokemonClass.swift */,
 				FEB7B55225B75192000CACD4 /* myPokemonApp */,
 				FEB7B56925B75192000CACD4 /* myPokemonAppTests */,
 				FEB7B57425B75192000CACD4 /* myPokemonAppUITests */,
@@ -99,10 +128,23 @@
 		FEB7B55225B75192000CACD4 /* myPokemonApp */ = {
 			isa = PBXGroup;
 			children = (
+				FE75717D25DF17C200393CE3 /* Swift+gif.swift */,
 				FEB7B55325B75192000CACD4 /* AppDelegate.swift */,
 				FEB7B55525B75192000CACD4 /* SceneDelegate.swift */,
-				FEB7B55725B75192000CACD4 /* ViewController.swift */,
 				FEB7B55925B75192000CACD4 /* Main.storyboard */,
+				FEF6365825CB7AD30004BB9D /* MVC3.swift */,
+				FE1DD4BB25C23BFB00856EB2 /* MVC1.swift */,
+				FE30E6A225B875850045D42F /* MVC2.swift */,
+				FE2E2A0326055D31002D7FA1 /* mainBG.png */,
+				FE2E29DE2605251C002D7FA1 /* dexBG.png */,
+				FE47A7CF25E5AD0C00380610 /* blazikenmoving.gif */,
+				FE47A7D125E5AD0C00380610 /* charizardmoving.gif */,
+				FE47A7D025E5AD0C00380610 /* enteimoving.gif */,
+				FE75718525DF198300393CE3 /* blastoisemoving.gif */,
+				FE47A7C525E5A83C00380610 /* laprasmoving.gif */,
+				FE47A7CA25E5A88800380610 /* totodilemoving.gif */,
+				FE2E29EE26055700002D7FA1 /* waterbg2.jpg */,
+				FE2E29F326055A0A002D7FA1 /* firebg2.jpg */,
 				FEB7B55C25B75192000CACD4 /* Assets.xcassets */,
 				FEB7B55E25B75192000CACD4 /* LaunchScreen.storyboard */,
 				FEB7B56125B75192000CACD4 /* Info.plist */,
@@ -231,8 +273,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE47A7D325E5AD0C00380610 /* enteimoving.gif in Resources */,
 				FEB7B56025B75192000CACD4 /* LaunchScreen.storyboard in Resources */,
+				FE47A7D225E5AD0C00380610 /* blazikenmoving.gif in Resources */,
+				FE75718625DF198300393CE3 /* blastoisemoving.gif in Resources */,
+				FE47A7CB25E5A88800380610 /* totodilemoving.gif in Resources */,
+				FE47A7C625E5A83C00380610 /* laprasmoving.gif in Resources */,
 				FEB7B55D25B75192000CACD4 /* Assets.xcassets in Resources */,
+				FE47A7D425E5AD0C00380610 /* charizardmoving.gif in Resources */,
+				FE2E29EF26055700002D7FA1 /* waterbg2.jpg in Resources */,
+				FE2E29F426055A0A002D7FA1 /* firebg2.jpg in Resources */,
+				FE2E29DF2605251C002D7FA1 /* dexBG.png in Resources */,
+				FE2E2A0426055D31002D7FA1 /* mainBG.png in Resources */,
 				FEB7B55B25B75192000CACD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEB7B55825B75192000CACD4 /* ViewController.swift in Sources */,
+				FEB7B59825B758B4000CACD4 /* MyPokemonClass.swift in Sources */,
+				FE75717E25DF17C200393CE3 /* Swift+gif.swift in Sources */,
 				FEB7B55425B75192000CACD4 /* AppDelegate.swift in Sources */,
+				FEF6365925CB7AD30004BB9D /* MVC3.swift in Sources */,
+				FE1DD4BC25C23BFB00856EB2 /* MVC1.swift in Sources */,
+				FE30E6A325B875850045D42F /* MVC2.swift in Sources */,
 				FEB7B55625B75192000CACD4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +493,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4J5L2QQM49;
 				INFOPLIST_FILE = myPokemonApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +512,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4J5L2QQM49;
 				INFOPLIST_FILE = myPokemonApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

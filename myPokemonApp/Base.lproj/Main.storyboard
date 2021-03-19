@@ -1,24 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7OM-uc-9OX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--MVC1-->
+        <scene sceneID="dv3-eP-NfU">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="tzg-Eq-pmK" customClass="MVC1" customModule="myPokemonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vIY-CA-8LH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="590"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="tVL-nD-UPC">
+                                <rect key="frame" x="0.0" y="44" width="375" height="590"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rmj-TH-dff">
+                                <rect key="frame" x="16" y="87" width="261" height="158"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="A4l-1M-cVc"/>
+                                    <constraint firstAttribute="height" constant="158" id="hWe-fp-KCy"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lK0-bK-8mD" appends="YES" id="dGg-45-Y5c"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcy-Yh-SO1">
+                                <rect key="frame" x="16" y="59" width="223" height="20.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXh-dG-89p">
+                                <rect key="frame" x="16" y="281" width="223" height="20.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EA2-as-cxn">
+                                <rect key="frame" x="16" y="309" width="261" height="158"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="HPq-Bf-PGq"/>
+                                    <constraint firstAttribute="height" constant="158" id="TZh-50-SrR"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GtV-i7-lws" appends="YES" id="Rp9-C1-rZ1"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H9J-FT-P8e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rmj-TH-dff" firstAttribute="top" secondItem="gcy-Yh-SO1" secondAttribute="bottom" constant="7.5" id="6iN-O5-FYX"/>
+                            <constraint firstItem="EA2-as-cxn" firstAttribute="top" secondItem="kXh-dG-89p" secondAttribute="bottom" constant="7.5" id="E8e-Je-FLX"/>
+                            <constraint firstItem="gcy-Yh-SO1" firstAttribute="leading" secondItem="H9J-FT-P8e" secondAttribute="leading" constant="16" id="K2M-s9-SPz"/>
+                            <constraint firstItem="kXh-dG-89p" firstAttribute="top" secondItem="rmj-TH-dff" secondAttribute="bottom" constant="36" id="KZz-v3-jgg"/>
+                            <constraint firstItem="EA2-as-cxn" firstAttribute="leading" secondItem="H9J-FT-P8e" secondAttribute="leading" constant="16" id="L8D-8b-Gxs"/>
+                            <constraint firstItem="H9J-FT-P8e" firstAttribute="trailing" secondItem="rmj-TH-dff" secondAttribute="trailing" constant="98" id="Xlu-b5-BL1"/>
+                            <constraint firstItem="gcy-Yh-SO1" firstAttribute="top" secondItem="H9J-FT-P8e" secondAttribute="top" constant="15" id="asB-Yi-7gO"/>
+                            <constraint firstItem="kXh-dG-89p" firstAttribute="leading" secondItem="H9J-FT-P8e" secondAttribute="leading" constant="16" id="kzk-f5-a1O"/>
+                            <constraint firstItem="H9J-FT-P8e" firstAttribute="trailing" secondItem="gcy-Yh-SO1" secondAttribute="trailing" constant="136" id="nzw-Rn-aZp"/>
+                            <constraint firstItem="H9J-FT-P8e" firstAttribute="trailing" secondItem="EA2-as-cxn" secondAttribute="trailing" constant="98" id="tbj-fu-EJS"/>
+                            <constraint firstItem="rmj-TH-dff" firstAttribute="leading" secondItem="H9J-FT-P8e" secondAttribute="leading" constant="16" id="w8H-3C-Cvk"/>
+                            <constraint firstItem="H9J-FT-P8e" firstAttribute="trailing" secondItem="kXh-dG-89p" secondAttribute="trailing" constant="136" id="ydy-IR-F4L"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="uLp-bj-8AB"/>
+                    <size key="freeformSize" width="375" height="590"/>
+                    <connections>
+                        <outlet property="TapImg1" destination="lK0-bK-8mD" id="Kof-L7-2Kd"/>
+                        <outlet property="TapImg2" destination="GtV-i7-lws" id="TnR-LE-i7b"/>
+                        <outlet property="backgroundImg" destination="tVL-nD-UPC" id="D11-rg-FKt"/>
+                        <outlet property="pokeImg1" destination="rmj-TH-dff" id="mzb-h3-SfZ"/>
+                        <outlet property="pokeImg2" destination="EA2-as-cxn" id="j5T-FE-kLg"/>
+                        <outlet property="typeLabel1" destination="gcy-Yh-SO1" id="E0X-A9-afH"/>
+                        <outlet property="typeLabel2" destination="kXh-dG-89p" id="YZ2-y8-iAo"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7RM-7W-WeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="lK0-bK-8mD" userLabel="TAP1">
+                    <connections>
+                        <segue destination="asg-nO-hEa" kind="show" id="zKI-oJ-5hJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="GtV-i7-lws" userLabel="TAP2">
+                    <connections>
+                        <segue destination="asg-nO-hEa" kind="show" id="Pz9-so-dl8"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="12336.799999999999" y="-157.42128935532236"/>
+        </scene>
+        <!--MVC2-->
+        <scene sceneID="j1X-p2-e2m">
+            <objects>
+                <viewController id="asg-nO-hEa" customClass="MVC2" customModule="myPokemonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sUz-60-RJA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="590"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aSR-6T-8ck" userLabel="Background Image">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="590"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="goa-Sw-Cz9">
+                                <rect key="frame" x="16" y="110" width="173" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="CtF-jX-gKy" appends="YES" id="Tuo-L9-Bg7"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h0c-OP-oaV">
+                                <rect key="frame" x="16" y="279" width="173" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XaO-1S-cbd" appends="YES" id="bFO-iy-ac1"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pokemon Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkd-GA-j6q">
+                                <rect key="frame" x="16" y="66" width="173" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pokemon Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFa-kh-Gho">
+                                <rect key="frame" x="16" y="246" width="173" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S6T-Np-6yi">
+                                <rect key="frame" x="16" y="445" width="173" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pBI-dQ-66J" appends="YES" id="1Za-O8-apc"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pokemon Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNr-tO-klR">
+                                <rect key="frame" x="16" y="410" width="173" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pfg-Y3-ssD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VB2-q9-sH7"/>
+                    <size key="freeformSize" width="375" height="590"/>
+                    <connections>
+                        <outlet property="TAPPOKE1" destination="CtF-jX-gKy" id="3pX-aB-dOX"/>
+                        <outlet property="TAPPOKE2" destination="XaO-1S-cbd" id="bmY-PR-6u6"/>
+                        <outlet property="TAPPOKE3" destination="pBI-dQ-66J" id="V40-Jj-cC2"/>
+                        <outlet property="backgroundPokeTypeIMG" destination="aSR-6T-8ck" id="wxb-ty-WBy"/>
+                        <outlet property="img1" destination="goa-Sw-Cz9" id="3H3-FJ-JGg"/>
+                        <outlet property="img2" destination="h0c-OP-oaV" id="jiI-1q-h37"/>
+                        <outlet property="img3" destination="S6T-Np-6yi" id="TSW-lY-3b8"/>
+                        <outlet property="pokemon1" destination="hkd-GA-j6q" id="vBw-PQ-AiW"/>
+                        <outlet property="pokemon2" destination="XFa-kh-Gho" id="USR-W3-7kL"/>
+                        <outlet property="pokemon3" destination="vNr-tO-klR" id="W1g-we-NEb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gpg-kd-Xdh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="CtF-jX-gKy" userLabel="TAPPOKE1">
+                    <connections>
+                        <segue destination="weY-F7-uBm" kind="show" id="bZy-sU-pTp"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XaO-1S-cbd" userLabel="TAPPOKE2">
+                    <connections>
+                        <segue destination="weY-F7-uBm" kind="show" id="4Dp-V4-Oac"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="pBI-dQ-66J" userLabel="TAPPOKE3">
+                    <connections>
+                        <segue destination="weY-F7-uBm" kind="show" id="BDy-aq-hRi"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="13122.4" y="-156.07196401799101"/>
+        </scene>
+        <!--MVC3-->
+        <scene sceneID="lLZ-Yl-Q7D">
+            <objects>
+                <viewController id="weY-F7-uBm" customClass="MVC3" customModule="myPokemonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZuZ-Px-n3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="590"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hE1-zD-Dzi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="590"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W8J-Hz-4bC">
+                                <rect key="frame" x="16" y="242" width="149" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7M-j1-qKK">
+                                <rect key="frame" x="104" y="185" width="146" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfT-0t-56P">
+                                <rect key="frame" x="0.0" y="117" width="375" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="55" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGU-qt-kzj">
+                                <rect key="frame" x="173" y="235" width="151" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mfm-Ez-v7h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YFM-aP-sgu"/>
+                    <size key="freeformSize" width="375" height="590"/>
+                    <connections>
+                        <outlet property="backgroundIMG" destination="hE1-zD-Dzi" id="L9W-vt-Uqp"/>
+                        <outlet property="myPokedexNumber" destination="e7M-j1-qKK" id="nEM-dx-622"/>
+                        <outlet property="myPokemonDescription" destination="qGU-qt-kzj" id="euU-mH-G8K"/>
+                        <outlet property="myPokemonGif" destination="W8J-Hz-4bC" id="eUH-Dx-f8t"/>
+                        <outlet property="myPokemonName" destination="cfT-0t-56P" id="AgB-SG-6RT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggo-wa-AWY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13861.6" y="-157.42128935532236"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9s2-D7-9Ja">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7OM-uc-9OX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fSe-I0-Npl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tzg-Eq-pmK" kind="relationship" relationship="rootViewController" id="Lil-Al-EqJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXt-cq-TQ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11372" y="-156.07196401799101"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4Dp-V4-Oac"/>
+        <segue reference="zKI-oJ-5hJ"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
