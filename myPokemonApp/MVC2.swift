@@ -73,7 +73,7 @@ class MVC2: UIViewController {
             // set info of all pokemon present on this view
             self.pokemon1.text = self.waterPokemon[0].name
             self.img1.image = self.waterPokemon[0].image
-            self.img1.contentMode = .scaleAspectFit
+            self.img1.contentMode = .scaleAspectFit // adjust image aspect 
             self.pokemon2.text = self.waterPokemon[1].name
             self.img2.image = self.waterPokemon[1].image
             self.img2.contentMode = .scaleAspectFit

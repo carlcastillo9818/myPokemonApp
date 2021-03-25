@@ -66,6 +66,7 @@ class MVC3: UIViewController {
         self.myPokemonName.text = myChosenPokemon.name
         self.myPokedexNumber.text = "Pokedex #" + myChosenPokemon.ID
         self.myPokemonGif.loadGif(name: myChosenPokemon.gif)
+        self.myPokemonGif.contentMode = .scaleAspectFit
         self.myPokemonDescription.text = myChosenPokemon.description
         
     }

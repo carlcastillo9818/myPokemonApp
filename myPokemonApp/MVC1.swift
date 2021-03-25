@@ -24,8 +24,11 @@ class MVC1: UIViewController {
     {
         super.viewDidLoad()
         
-        backgroundImg.image = UIImage(named : "mainBG.png")
-        
+        backgroundImg.image = UIImage(named : "mainBG.png") // load in a custom image
+        self.backgroundImg.contentMode = .scaleAspectFill
+        // .scaleAspectFit scales content to fit the view but maintain aspect ratio.
+        // .scaleAspectFill scales the content to fill the view while maintaining aspect ratio, so image might be larger than the view
+
         setPokeTypes()
         // Do any additional setup after loading the view.
     }
