@@ -17,8 +17,8 @@ class MVC1: UIViewController {
     @IBOutlet weak var pokeImg2: UIImageView!
     @IBOutlet var TapImg2: UITapGestureRecognizer!
     @IBOutlet weak var backgroundImg: UIImageView!
-    var PokemonTypes : [String] = []
-    var myClickedType : String = String()
+    var PokemonTypes : [String] = [] // one way to declare arrays in swift
+    var myClickedType : String = String() // alternate way to make an array
     
     override func viewDidLoad() // this method loads all data
     {
